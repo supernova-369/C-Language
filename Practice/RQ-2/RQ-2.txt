@@ -1,0 +1,68 @@
+Why and when do we use the #include directive?
+
+-You use the #include directive to copy the contents of another file, usually a header file, into your current file before compilation. 
+This is done to reuse code, include standard library functions (like printf()), and organize your project into modules.
+It is used when you need to access declarations for functions, macros, or variables that are defined elsewhere, 
+either in standard libraries or your own separate files. 
+
+
+Why and when to use #include
+-To use standard library functions: Include a standard header file, like <stdio.h>, 
+ to use functions like printf() and scanf() without rewriting their definitions.
+
+-To use your own functions: When you define functions in a separate source file,
+ you must include the header file that contains their declarations so the compiler knows they exist and how to use them.
+
+-To share declarations: A header file can contain constants, type definitions, and function prototypes, allowing multiple source files
+ in your project to use them consistently by including the header.
+
+-For code modularity: Breaking your code into multiple files makes it more organized and manageable.
+ The #include directive is how you connect these different parts together. 
+
+
+
+What does void main(void) mean?
+-The function signature void main(void) means that 
+ the function named main does not return any value to the calling program or operating system and does not accept any parameters (arguments). 
+
+
+Why do we need to use comments in programs?
+-We need comments in programs to explain complex logic, clarify the "why" behind code (not just the "what"), improve readability for future self or team, aid debugging by temporarily disabling code, and
+ serve as essential documentation for maintainability and collaboration, making code understandable and usable long-term. 
+ Good comments explain intent and context, helping others (and your future self) grasp the code's purpose without reading every line, significantly easing maintenance and feature development. 
+
+
+Why is the look of a program is important?
+-The look of a program is crucial because it impacts usability (easy to read/navigate), professionalism (builds trust/brand), and
+ efficiency (less complaints/faster work) for users,
+ while for developers, a good design (layout, conventions, structure) ensures the code is maintainable, understandable, and
+ flexible for future changes, making the whole development process smoother and reducing long-term costs.
+ It acts as a blueprint, defining how users interact with it
+ and how developers build and maintain it. 
+
+
+
+Where are blank spaces permitted in a C program?
+-In C, blank spaces (whitespace like spaces, tabs, newlines) are permitted between tokens (keywords, identifiers, operators, constants) to improve readability,
+ but not within tokens, like ma in instead of main. 
+ Whitespace separates meaningful units, allowing flexibility in formatting code (e.g., int x=5; is same as int\n x\n=\n5\n;), but
+ it's crucial for token separation and preprocessor directives. 
+
+
+
+Describe the structure of a C program.
+-The structure of a C program is divided into several logical sections, although only the main() function is essential for a program to compile and run. A well-structured program typically includes the following sections to enhance readability, maintainability, and modularity: 
+  Documentation Section:                This optional section includes comments (/* ... */ for multi-line or // for single-line) that describe the program's purpose, author, date of creation, and other relevant details. The compiler ignores these comments.
+  Preprocessor Directives/Link Section: This section contains special instructions to the preprocessor, which are processed before the code is compiled. Directives begin with the # symbol.
+	#include directives link necessary library files (header files, e.g., <stdio.h>) that contain declarations for predefined functions (like printf() and scanf()).
+	#define directives are used to define symbolic constants (macros) that are replaced by their values throughout the code before compilation.
+  Global Declaration Section:           This section declares variables and functions that are accessible from any part of the program. Global variables should be used with caution, as they can introduce side effects and make debugging more complex.
+  main() Function Section:              This is the most important section, as it is the entry point for program execution. Every C program must have a single main() function. The code within the curly braces ({...}) defines the program's primary logic, which can include:
+  Variable Declarations:                Declaring local variables used within the function.
+  Statements and Expressions:           The actual instructions, calculations, control flow statements (loops, if-else), and function calls that the program executes.
+  Return Statement:                     Typically, return 0; at the end of the main() function indicates successful program termination to the operating system.
+  Subprogram Section:                   This optional section contains user-defined functions that perform specific tasks and can be called from the main() function or other user-defined functions. This promotes modularity and code reusability. 
+
+
+
+
