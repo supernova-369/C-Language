@@ -1,0 +1,95 @@
+  -----------------------    VOID POINTERS -----------------------
+
+The void pointer in C is a pointer which is not associated with any data type like int, char, float.
+
+it points to some data location in the storage means points to the address of variables.
+
+it is also called general purpose pointer
+
+
+
+IN SHORT :
+kisi bhi type ke variable ko store kr leta he 
+
+#include<stdio.h>
+int main()
+{
+	int a=7;
+	float b=7.6;
+	void *p;
+	// you can't directly dereference this because its void pointer
+	p = &a;
+	printf("Integer variable is = %d", *( (int*) p)  );
+	//typecast this into integer and then derefernce it.
+	p=&b;
+	printf("\nFloat Variable is = %f", *((float*)p));
+	return 0;
+}
+
+Uses of pointers 
+
+1) Void pointer is used in dynamic memory allocation, malloc() and calloc() return void type pointer.
+
+2) Just because the void pointers can be typecasted into  any pointer type, it allows the dynamic memory functions to be used to allocate memory of any data type.
+
+Limitations of void pointers 
+
+You can't do pointers arithmetic with the void pointers because:
+
+1)Void pointers can't be dereferenced.
+2)Pointer arithmetic isn't allowed with void pointers in C language.
+
+-------------------------    NULL POINTERS ------------------------
+
+*NOTE:- NULL is a VALUE and VOID is a DATA TYPE
+
+A NULL Pointer is a pointer that does not point to a valid memory location.
+
+The null pointer basically stores the NULL value
+
+Making a null pointer
+	int *ptr=NULL;
+
+You Cannot dereference a null pointer.
+
+It can be used by the programmer to check if the pointer is legimitate or not
+
+
+int n=34;
+int *p;
+p=NULL; p stores a NULL value i.e. NULL address
+p=&n; now p stores the address of the variable n 
+
+
+But unlike void pointer the value in null pointer can only be store if both(The variable and the null pointer) are of same data type.
+
+
+---------------------------  DANGLING POINTER -----------------------
+
+Dangling pointer = latakta pointer
+
+A pointer pointing to a memory location that has been deleted(or freed) is called dangling pointer.
+In this case, the pointer is pointing to the memory, which is de-allocated.
+
+A pointer pointing to a freed memory location is known as dangling pointer.
+
+int n;
+int *ptr;
+ptr = (int*)malloc(sizeof(int))
+
+free(ptr);
+
+//more code
+
+
+
+--------------------------  WILD POINTER -----------------------------
+
+when we make a pointer but do not initialize it with an address, it is known as a wild pointer.
+Dereferencing wild pointers is not recommended, it can cause bugs which can crash your program.
+If you're not using the pointer then you should initialize it with NULL value.
+These pointers point to random location in memory.
+
+int *ptr; WILD pointer
+ptr = NULL
+

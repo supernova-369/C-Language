@@ -1,0 +1,60 @@
+Logical errors are mistakes in the program's algorithm or reasoning that cau
+ it to produce incorrect or unexpected output, even though it runs without crashing. 
+Compilers do not detect these errors because the code is syntactically valid;
+they are typically found during program execution and debugging by the programmer.
+
+
+
+
+Data errors are not a standard category of errors detected by
+a compiler. Errors related to data, such as division by 
+zero or accessing invalid memory, generally manifest as run-time errors 
+(occurring during program execution) or are a result of logical errors or bad input data.
+
+
+
+
+
+The C programming language (specifically the original ANSI C or C89/C90 standard) comprises 32 keywords. 
+These are reserved words that have predefined meanings and cannot be used as variable names or other identifiers. 
+The list of the 32 standard C keywords is:
+-auto
+-break
+-case
+-char
+-const
+-continue
+-default
+-do
+-double
+-else
+-enum
+-extern
+-float
+-for
+-goto
+-if
+-int
+-long
+-register
+-return
+-short
+-signed
+-sizeof
+-static
+-struct
+-switch
+-typedef
+-union
+-unsigned
+-void
+-volatile
+-while
+
+
+
+\r (Carriage Return): Moves the cursor to the beginning of the current line.
+
+
+
+In the C programming language, while most code is written in lowercase, uppercase letters are mainly used by convention to define constants or preprocessor macros. 

@@ -1,0 +1,213 @@
+The
+statements
+number = 100;
+amount = 30.75 + 75.35;
+are called the assignment statements.
+
+
+KEY CONCEPTS
+
+1
+printf : Is a predefined standard C function that writes the output
+to the stdout (standard output) stream
+
+
+2
+scanf : Is a predefined standard C function that reads formatted
+input from stdin (standard input) stream.
+
+
+3
+PROGRAM : Is a sequence of instructions written to perform a
+specific task in the computer.
+
+
+4
+ALGORITHM: An algorithm uses English-like statements to
+show the flow of logic in a step-wise manner.
+
+
+5
+The central processing unit is a VLSI circuit
+VLSI - VLSI stands for Very Large Scale Integration.
+
+It refers to the process of creating integrated circuits (ICs) by
+combining millions or billions of transistors 
+onto a single chip, used in processors, memory chips, etc.
+
+
+6
+The control unit generates control signals and sends them to the
+different components of a computer
+
+
+7
+The arithmetic logic unit has many circuits inside it that are
+capable of performing various arithmetic and logic operations.
+
+
+8
+The CPU has direct connections to the primary memory.
+
+
+9
+The CPU has direct connections to the primary memory.
+
+
+10
+The RAM is a volatile memory.
+The ROM is a non-volatile memory.
+
+
+11
+The secondary memory serves as a data reservoir.
+
+
+12
+The operating system acts as an interface between the user and
+the hardware
+
+
+13
+Algorithms do not have a fixed style of writing
+
+
+14
+Algorithms should be finite and correct and the statements in it
+should be unambiguous
+unambigous - not open to more than one interpretation
+
+
+15
+C is a structured, high-level, machine independent language.
+
+
+16
+ANSI C and C99 are the standardized versions of C
+language
+C combines the capabilities of assembly language with the features
+of a high level language.
+C is robust, portable and structured programming language
+Every program statement in a C language must end with a
+semicolon
+
+
+17
+Typecasting in C means converting one data type into another manually by 
+writing the desired data type in parentheses before a variable or value.
+
+
+
+18
+symbolic constants they are the constants which are used to asign a number to a variable 
+example :
+#define PI 3.14159
+or
+const float PI = 3.14159; // Declares a constant float variable
+
+
+19
+enum asigns numbers to variables by itself
+like
+enum weekdays ={ Mon , Tue, wed, thur, fri, sat, sun};
+mon will be automatically asigned as 0
+and sunday as 6
+
+
+20
+Relational Operators 
+==(comparision)
+=(assignment)
+!=(not equal to)
+
+<	Less than	5 < 10	1
+>	Greater than	10 > 5	1
+<=	Less than or equal to	5 <= 5	1
+>=	Greater than or equal to	10 >= 20	0
+==	Equal to	5 == 5	1
+!=	Not equal to	5 != 3	1
+
+
+&& - AND operator
+|| - OR operator
+! - NOT operator
+
+
+21
+Special Operator	Purpose
+sizeof			Find memory size
+
+?:			Conditional decision(Ternary)
+
+,			Multiple expressions(comma)
+
+&			Address-of variable
+
+int x = 10;
+int *p = &x;
+printf("%d", *p);// 10
+			Pointer dereference
+
+. ->			Structure member access
+
+(type)			Type casting
+
+
+
+22
++ - * /
+Left to right
+
+23
+=	Right to left
+?:	Right to left
+
+
+24
+i++
+why in this post-increment operator first i gets increased by one and then used?
+because associativity of ++ or -- is from *right to left*
+hence while ++i first i get used and then i get increased by one.
+
+
+25
+Function	Purpose				Example
+sqrt(x)		Square root			sqrt(16) → 4
+
+pow(x, y)	Power				pow(2, 3) → 8
+
+abs(x)		Absolute value (int)		abs(-5) → 5
+
+fabs(x)		Absolute value (float/double)	fabs(-5.5) → 5.5
+
+ceil(x)		Smallest integer ≥ x		ceil(4.2) → 5
+
+floor(x)	Largest integer ≤ x		floor(4.8) → 4
+
+
+log(x)		Natural log (base e)		log(10)
+
+log10(x)	Log base 10			log10(100) → 2
+
+sin(x)		Sine (radians)			sin(0) → 0
+
+cos(x)		Cosine (radians)		cos(0) → 1
+
+tan(x)		Tangent (radians)		tan(0) → 0
+
+
+
+26
+If one operand is double → other converts to double
+
+Else if one operand is float → other converts to float
+
+Else → both convert to int(example char and int)
+
+
+27
+Ternary Operator
+(expression ?: Condition1 : Condition2 );
+(condition ? : value_if_true : value_if_false);
+
+28

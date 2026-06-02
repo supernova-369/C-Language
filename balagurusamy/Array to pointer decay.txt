@@ -1,0 +1,59 @@
+Pointer decay (more accurately array-to-pointer decay) is a rule in C
+where an array name automatically converts into a pointer to its first element when used in most expressions.
+
+👉 Array behaves like a pointer to its first element.
+
+
+
+What exactly decays?
+
+array → becomes &array[0]
+
+Type changes from
+int [5] → int *
+
+
+
+
+simple example:
+
+int a[5];
+
+printf("%p\n", a);      // same address as &a[0]
+printf("%p\n", &a[0]);
+
+
+
+
+Where does pointer decay happen?
+
+When passing arrays to functions
+
+In pointer arithmetic
+
+In expressions like a + 1, *(a + i)
+
+
+
+Where pointer decay does NOT happen
+
+With sizeof
+
+With &array
+
+sizeof(arr);   // size of entire array
+&arr;          // pointer to whole array (not first element)
+
+
+Array is NOT a pointer,
+but it becomes one automatically in most expressions.
+
+
+
+
+Pointer decay in C is the automatic conversion of an array name into a pointer to its first element when the array is used in an expression.
+
+If you want a slightly expanded 2-line version (also exam-safe):
+
+Pointer decay (array-to-pointer decay) is a C mechanism where an array name loses its array type and behaves as a pointer to its first element,
+except when used with sizeof or the address-of operator (&).

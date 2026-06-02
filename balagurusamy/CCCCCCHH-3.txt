@@ -1,0 +1,43 @@
+What are trigraph characters? How are they useful?
+Describe the four basic data types. How could we extend the range
+of values they represent?
+What is an unsigned integer constant? What is the significance of
+declaring a constant unsigned?
+Describe the characteristics and purpose of escape sequence
+characters.
+What is a variable and what is meant by the “value” of a variable?
+How do variables and symbolic names differ?
+State the differences between the declaration of a
+variable and the definition of a symbolic name.
+What are the qualifiers that an int can have at a time?
+
+
+
+
+A programmer would like to use the word DPR to declare all the
+double-precision floating point values in his program. How could
+he achieve this?
+What are enumeration variables? How are they declared? What is
+the advantage of using them in a program?
+Describe the purpose of the qualifiers const and volatile .
+When dealing with very small or very large numbers,
+what steps would you take to improve the accuracy of the
+calculations?
+
+
+Explain the following with examples:
+(a) Enumerated types
+(b) Type def
+Distinguish between the following:
+(a) Global and local variables
+(b) Initialization and assignment of variables
+(c) Automated and static variables
+
+
+Is it possible to declare an identifier that starts with an underscore?
+Is it possible to declare an identifier that ends with an
+underscore?
+What is the return type of printf function?
+What is the difference between declaring and defining a variable?
+What is long long int?
+What is the return type of scanf function?

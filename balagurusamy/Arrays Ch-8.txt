@@ -1,0 +1,16 @@
+What is a data structure? Why is an array called a data structure?
+What is a dynamic array? How is it created? Give a
+typical example of use of a dynamic array.
+What happens when an array with a specified size is assigned
+(a) with values fewer than the specified size; and
+(b) with values more than the specified size.
+Discuss how initial values can be assigned to a multidimen sional
+array.
+
+
+
+What is the difference between null array and empty array?
+What is the difference between malloc and calloc
+functions?
+Which function can be used to convert a string to an integer and
+vice versa?

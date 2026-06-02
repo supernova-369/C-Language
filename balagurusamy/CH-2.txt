@@ -1,0 +1,18 @@
+The
+statements
+number = 100;
+amount = 30.75 + 75.35;
+are called the assignment statements
+
+
+
+
+Name some of the key features of C programming language.
+Which symbol is used to indicate the end of most C
+programming statements?
+Do you consider C as a high-level programming language?
+Which punctuation symbols are used to represent
+code blocks in C?
+Which function is the starting point in a C program?
+Which return value of main() function indicates successful
+completion of the program?
